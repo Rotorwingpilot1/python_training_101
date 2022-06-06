@@ -1,0 +1,54 @@
+Lone Star Development Training - General Basics
+
+Python PEP8 Style Guidelines
+https://peps.python.org/pep-0008/
+
+Imports
+    According to the Python PEP8 style guidelines, imports should usually be on separate lines. You should only be
+    importing what you need. Don't import an entire package if you only need part of it.
+
+    Correct
+        import os
+        import sys
+        from subprocess import PIPE
+
+    Incorrect
+        import sys, os
+
+    Import only what is needed (if only math -> pi is needed, only import that)
+
+        Incorrect
+        import math
+
+        Correct
+        from math import pi
+
+Variables
+    A variable is a named location that is used to store assigned data into memory. A variable can have about
+    anything assigned to it. The value or object that is assigned to a variable can be changed and manipulated
+    as needed within an application or script. Typically the best naming convention is lower case one word or if
+    multiple words, the words are separated by an underscore. Ex  my_variable
+
+Constants
+    A constant is a type of variable where the value can't be changed. Typically the best naming convention is all upper case one word or if
+    multiple words, the words are separated by an underscore. Ex MY_CONSTANT
+
+Functions
+    A function is a block of code that is for a single specific purpose. Typically the best naming convention is
+    lower case one word or if multiple words, the words are separated by an underscore. Ex  my_function
+Classes
+    A class can be looked at like an object. It can have both properties and methods. Typically the best naming convention is
+    capital first letter and rest is lower case. Ex MyClass
+
+Maximum Line Length
+    It is recommended in PEP8 that all lines are limited to 79 characters in length. This will help in understanding and readability as the
+    logic and code becomes more complex.
+
+# Naming Conventions for constants and variables
+# lowercase
+# lowercase_underscores
+# UPPERCASE
+# UPPERCASE_UNDERSCORES
+# CamelCase - Pascal Case, upper camel case  NOTE: Microsoft recognizes as Pascal Case
+# camelCase - dromedary case, lower camel case  NOTE: Microsoft recognizes as camel case
+# CapWords
