@@ -15,9 +15,10 @@ my_string6 = """This is a multi-line string so that it can
 my_string7 = "This is a string that is going to wrap if it is oversized. This is different than a " \
              "multi-line string in the fact that it can keep on going and going till it is not readable."
 
-print (my_string1)
-print (my_string2)
-print (my_string3)
+# Print each of the string examples above
+print(my_string1)
+print(my_string2)
+print(my_string3)
 print (my_string4)
 print (my_string5)
 print (my_string6)
@@ -64,12 +65,17 @@ print(string_concat_result3)
 
 # Example 3 concatenation using the "%" operator
 string_concat_result4 = "%s%s"%(string_concat1, string_concat2)
-string_concat_result5 = "%s : %s"%(string_concat1, string_concat2)
+string_concat_result5 = "%s: %s"%(string_concat1, string_concat2)
 # Should print (Hello my name is Brandon)
 print(string_concat_result4)
 # Should print (Hello my name is  : Brandon)
 print(string_concat_result5)
 
+# Example 4 concatenation using f-string (newer most modern and preferred approach)
+string_concat_result6 = f"{string_concat1}{string_concat2}"
+string_concat_result7 = f"{string_concat1}: {string_concat2}"
+print(string_concat_result6)
+print(string_concat_result7)
 
 # Exercises
 # Exercise 1
@@ -86,4 +92,13 @@ print(string_concat_result5)
 # Create a variable with the name of your position at Lone Star
 # Create a concatenated string that includes the two variables (name, position) that results in the following
 # string 'Hello, I am <name> and I work at Lone Star as a <position>!'
+# Print out the results of the string you concatenated.
+
+# Exercise 3
+# Create the following with concatenation using f-string
+# Create a variable with your first name
+# Create a variable with your last name
+# Create a variable with the name of your position at Lone Star
+# Create a concatenated string that includes the three variables (first_name, last_name, position) that results in the following
+# string 'Hello, I am <full name> and I work at Lone Star as a <position>!'
 # Print out the results of the string you concatenated.
