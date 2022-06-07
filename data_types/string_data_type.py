@@ -35,10 +35,55 @@ print (my_string7)
 # Do It Here!
 
 # Exercise 3
-#  Lets create a string that displays 'Hello "<your name here>"' with escape characters, assign it to
-#  my_name3 variable and print it out
+# Lets create a string that displays 'Hello "<your name here>"' with escape characters, assign it to
+# my_name3 variable and print it out
 # Do It Here!
 
 
 # STRING CONCATENATION
 # STRING CONCATENATION is the operation of joining two or more strings together to form a larger string
+# Variables for the examples
+string_concat1 = "Hello my name is "
+string_concat2 = "Brandon"
+
+# Example 1 concatenation using the "+" operator
+string_concat_result1 = string_concat1 + string_concat2
+string_concat_result2 = string_concat1 + ": " + string_concat2
+# Should print (Hello my name is Brandon)
+print(string_concat_result1)
+# Should print (Hello my name is : Brandon)
+print(string_concat_result2)
+
+# Example 2 concatenation using the "%" operator
+# With the "%" operator, we can insert a variable into a string.
+# %s: for string.
+# %d: for integer.
+string_concat_result3 = "Hello my name is %s"%string_concat2
+# Should print (Hello my name is Brandon)
+print(string_concat_result3)
+
+# Example 3 concatenation using the "%" operator
+string_concat_result4 = "%s%s"%(string_concat1, string_concat2)
+string_concat_result5 = "%s : %s"%(string_concat1, string_concat2)
+# Should print (Hello my name is Brandon)
+print(string_concat_result4)
+# Should print (Hello my name is  : Brandon)
+print(string_concat_result5)
+
+
+# Exercises
+# Exercise 1
+# Create the following with concatenation using the '+' operator
+# Create a variable with your first and last name
+# Create a variable with the name of the company you work for
+# Create a concatenated string that includes the two variables (name, company) that results in the following
+# string 'Hello, I am <name> and I work for <company>!'
+# Print out the results of the string you concatenated.
+
+# Exercise 2
+# Create the following with concatenation using the '%' operator
+# Create a variable with your first name
+# Create a variable with the name of your position at Lone Star
+# Create a concatenated string that includes the two variables (name, position) that results in the following
+# string 'Hello, I am <name> and I work at Lone Star as a <position>!'
+# Print out the results of the string you concatenated.
