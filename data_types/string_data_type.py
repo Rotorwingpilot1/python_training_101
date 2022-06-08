@@ -100,5 +100,5 @@ print(string_concat_result7)
 # Create a variable with your last name
 # Create a variable with the name of your position at Lone Star
 # Create a concatenated string that includes the three variables (first_name, last_name, position) that results in the following
-# string 'Hello, I am <full name> and I work at Lone Star as a <position>!'
+# string 'Hello, I am <full name> and I work at Lone Star as a/an <position>!'
 # Print out the results of the string you concatenated.
