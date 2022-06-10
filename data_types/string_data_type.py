@@ -8,7 +8,7 @@
 my_string1 = "Welcome to the Lone Star Development Python Training!"
 my_string2 = 'Welcome to Lone Star\'s Development Python Training!'
 my_string3 = "Welcome to Lone Star's Development Python Training!"
-my_string4 = "Wecome to 'Lone Star'"
+my_string4 = "Welcome to 'Lone Star'"
 my_string5 = "Welcome to \"Lone Star\""
 my_string6 = """This is a multi-line string so that it can
                 span over several lines in the IDE."""
@@ -102,3 +102,36 @@ print(string_concat_result7)
 # Create a concatenated string that includes the three variables (first_name, last_name, position) that results in the following
 # string 'Hello, I am <full name> and I work at Lone Star as a/an <position>!'
 # Print out the results of the string you concatenated.
+
+
+# STRING METHODS
+# The string methods are methods that you can call on a string data type.
+# capitalize() - Converts first char to upper case
+# count() - Returns number of times a value occures in a string
+# format() - formats specified values in a string
+# islower() - returns true if all values in a string are lower case
+# isupper() - returns true if all values in a string are upper case
+# lower() - converts string to lower case
+# upper() - converts sting to upper case
+# replace() - returns a string where a specified value is replaced with a specified value
+# split() - splits the string as a specified separator
+# strip() - strips spaces after char
+# and many others that you can research by looking into 'Python String Methods'
+
+# Examples
+# Will change string to all upper case
+print(my_string1.upper())
+# Will change string to all lower case
+print(my_string1.lower())
+# Will count the instances of 'python' in the string (should return 0 due to capital P in Python)
+print(my_string1.count("python"))
+# Will count the instances of 'python' in the string (should return 1 due to changing string to lower to match)
+print(my_string1.lower().count("python"))
+
+
+# Exercise
+exercise_string1 = "This is an exercise for you to problem solve "
+exercise_string2 = "This is an exercise for you to problem solve"
+are_equal = exercise_string1 == exercise_string2
+print("String Method Exercise")
+print(are_equal)
