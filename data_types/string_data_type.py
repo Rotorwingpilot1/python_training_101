@@ -116,6 +116,7 @@ print(string_concat_result7)
 # replace() - returns a string where a specified value is replaced with a specified value
 # split() - splits the string as a specified separator
 # strip() - strips spaces after char
+# find() - searches string for specified value and returns the position of where it was found.
 # and many others that you can research by looking into 'Python String Methods'
 
 # Examples
@@ -123,10 +124,14 @@ print(string_concat_result7)
 print(my_string1.upper())
 # Will change string to all lower case
 print(my_string1.lower())
-# Will count the instances of 'python' in the string (should return 0 due to capital P in Python)
+# Will count the instances of 'python' in the string
 print(my_string1.count("python"))
-# Will count the instances of 'python' in the string (should return 1 due to changing string to lower to match)
-print(my_string1.lower().count("python"))
+
+# Exercise
+# Are you surprised by the count of 'python' in the above example? Add a comment below to explain
+
+# Exercise - fix the above my_string1.count("python") without changing the word python so that it is true
+
 
 
 # Exercise
