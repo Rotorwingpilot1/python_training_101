@@ -107,7 +107,7 @@ print(string_concat_result7)
 # STRING METHODS
 # The string methods are methods that you can call on a string data type.
 # capitalize() - Converts first char to upper case
-# count() - Returns number of times a value occures in a string
+# count() - Returns number of times a value occurs in a string
 # format() - formats specified values in a string
 # islower() - returns true if all values in a string are lower case
 # isupper() - returns true if all values in a string are upper case
@@ -127,16 +127,28 @@ print(my_string1.lower())
 # Will count the instances of 'python' in the string
 print(my_string1.count("python"))
 
-# Exercise
+# Exercise 4
 # Are you surprised by the count of 'python' in the above example? Add a comment below to explain
 
-# Exercise - fix the above my_string1.count("python") without changing the word python so that it is true
+# Exercise 4 - fix the above my_string1.count("python") without changing the word python so that it is true
 
 
 
-# Exercise
-exercise_string1 = "This is an exercise for you to problem solve "
-exercise_string2 = "This is an exercise for you to problem solve"
-are_equal = exercise_string1 == exercise_string2
+# Exercise 5
+# Exercise 5 - How would we use a string method to fix the below code to result in a true return value
+# WITHOUT changing the actual string values
+exercise_string5a = "This is an exercise for you to problem solve "
+exercise_string5b = "This is an exercise for you to problem solve"
+are_equal = exercise_string5a == exercise_string5b
 print("String Method Exercise")
+print("String compare exercise:")
 print(are_equal)
+
+
+
+# Exercise 6
+# Exercise 6 - How would we use a string method to fix the below code to return python instead of java
+# WITHOUT changing the actual string values
+exercise_string6 = "We are learning to use Java"
+print(exercise_string6)
+
