@@ -71,7 +71,7 @@ def switch_unit(unit):
 prof = profile.Profile()
 prof.enable()
 # Read the csv file All Energy Statistics retrieved from kaggle.com UNdata is the reference for Machine Learning datasets
-df = pd.read_csv('all_energy_statistics.csv');
+df = pd.read_csv('../all_energy_statistics.csv');
 
 # Create new dataframe from calling the combine structure
 df_combined = combine_columns(df)

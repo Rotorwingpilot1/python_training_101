@@ -10,6 +10,7 @@ import io
 from pstats import SortKey
 import re
 import csv
+import timeit
 
 # Configuration
 pd.set_option("display.precision", 1)
@@ -72,19 +73,19 @@ def switch_unit(unit):
 
 
 # Read the csv file All Energy Statistics retrieved from kaggle.com UNdata is the reference for Machine Learning datasets
-df = pd.read_csv('all_energy_statistics.csv');
+df = pd.read_csv('../all_energy_statistics.csv');
 
 # Original calling of function prior to installing profiler
 #df_combined = combine_columns(df)
 # Run profile on the function to get results back
 print("Profiling Combine Columns")
-profile.run('combine_columns(df)')
+#profile.run('combine_columns(df)')
 
 # Original calling of function prior to installing profiler
 #df_combined1 = combine_columns1(df)
 # Run profile on the function to get results back
 print("Profiling Combine Columns 1")
-profile.run('combine_columns1(df)')
+#profile.run('combine_columns1(df)')
 
 # If you uncomment these, it will display the data in the dataframes
 #print(df_combined)
@@ -95,5 +96,11 @@ profile.run('combine_columns1(df)')
 #display(df_combined)
 #display(df_combined1)
 
+
+#timeit.timeit(combine_columns(df))
+t1 = timeit.Timer("combine_columns(df)", globals=globals())
+t2 = timeit.Timer("combine_columns1(df)", globals=globals())
+print(t1.timeit(1))
+print(t2.timeit(1))
 
 

@@ -1,4 +1,4 @@
-# Lone Star Development Training - String Data Types
+# Lone Star Development Training - String Data Type
 # STRINGS
 # Strings are one of the data types that you will see the most. Strings can be created in multiple ways within
 # Python. You can use single, double or triple quotes. Generally double quotes are used for string representation and
@@ -29,17 +29,22 @@ print (my_string7)
 # Exercise 1
 # Lets create a string that displays 'Hello <your name here>', assign it to my_name1 variable and print it out
 # Do It Here!
+my_name1 = 'Hello Brandon'
+print(my_name1)
 
 # Exercise 2
 # Lets create a string that displays "Hello "<your name here>"" without escape characters, assign it to
 # my_name2 variable and print it out
 # Do It Here!
+my_name2 = "Hello 'Brandon'"
+print(my_name2)
 
 # Exercise 3
 # Lets create a string that displays 'Hello "<your name here>"' with escape characters, assign it to
 # my_name3 variable and print it out
 # Do It Here!
-
+my_name3 = "Hello \"Brandon\""
+print(my_name3)
 
 # STRING CONCATENATION
 # STRING CONCATENATION is the operation of joining two or more strings together to form a larger string
@@ -49,7 +54,7 @@ string_concat2 = "Brandon"
 
 # Example 1 concatenation using the "+" operator
 string_concat_result1 = string_concat1 + string_concat2
-string_concat_result2 = string_concat1 + ": " + string_concat2
+string_concat_result2 = string_concat1 + " help " + string_concat2
 # Should print (Hello my name is Brandon)
 print(string_concat_result1)
 # Should print (Hello my name is : Brandon)
@@ -65,7 +70,7 @@ print(string_concat_result3)
 
 # Example 3 concatenation using the "%" operator
 string_concat_result4 = "%s%s"%(string_concat1, string_concat2)
-string_concat_result5 = "%s: %s"%(string_concat1, string_concat2)
+string_concat_result5 = "%s help %s"%( string_concat2,  string_concat1)
 # Should print (Hello my name is Brandon)
 print(string_concat_result4)
 # Should print (Hello my name is  : Brandon)
@@ -74,7 +79,7 @@ print(string_concat_result5)
 # Example 4 concatenation using f-string (newer most modern and preferred approach)
 string_concat_result6 = f"{string_concat1}{string_concat2}"
 string_concat_result7 = f"{string_concat1}: {string_concat2}"
-print(string_concat_result6)
+#print(string_concat_result6)
 print(string_concat_result7)
 
 # Exercises
@@ -85,6 +90,10 @@ print(string_concat_result7)
 # Create a concatenated string that includes the two variables (name, company) that results in the following
 # string 'Hello, I am <name> and I work for <company>!'
 # Print out the results of the string you concatenated.
+name = "Brandon Smith"
+company = "Lone Star Analysis"
+name_company = "Hello, I am " + name + " and I work for " + company + " Happy Day"
+print(name_company)
 
 # Exercise 2
 # Create the following with concatenation using the '%' operator
@@ -93,6 +102,10 @@ print(string_concat_result7)
 # Create a concatenated string that includes the two variables (name, position) that results in the following
 # string 'Hello, I am <name> and I work at Lone Star as a <position>!'
 # Print out the results of the string you concatenated.
+first_name = "Brandon"
+position = "Director of Software Development"
+name_position = "Hello, I am %s and I work at Lone Star as a  %s"%(first_name, position)
+print(name_position)
 
 # Exercise 3
 # Create the following with concatenation using f-string
@@ -102,7 +115,9 @@ print(string_concat_result7)
 # Create a concatenated string that includes the three variables (first_name, last_name, position) that results in the following
 # string 'Hello, I am <full name> and I work at Lone Star as a/an <position>!'
 # Print out the results of the string you concatenated.
-
+last_name = "Smith"
+fullname_position = f"Hello, I am {first_name} {last_name} and I work at Lone Star as a {position}"
+print(fullname_position)
 
 # STRING METHODS
 # The string methods are methods that you can call on a string data type.
