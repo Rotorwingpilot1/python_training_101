@@ -135,12 +135,43 @@ print(fullname_position)
 # and many others that you can research by looking into 'Python String Methods'
 
 # Examples
+my_string1 = "Welcome to the Lone Star Development Python Training!"
+
+
 # Will change string to all upper case
+print("Example: String converted to upper case")
 print(my_string1.upper())
+
 # Will change string to all lower case
+print("Example: String converted to lower case")
 print(my_string1.lower())
+
 # Will count the instances of 'python' in the string
+print("Example: Count instances of 'python' in the string")
 print(my_string1.count("python"))
+print(my_string1.lower().count("python"))
+
+# Will find instance of Python in string
+print("Example: Find Method to search for 'Python'")
+print(my_string1.find("Python"))
+print(my_string1[37:43])
+
+my_string2 = "Lone Star "
+my_string3 = "Lone Star"
+
+#print("Example: Strip whitespace from end of string")
+# This should return false due to white space
+print(my_string2 == my_string3)
+print((my_string2.strip() == my_string3.strip()))
+
+# Will replace a word in string replace Java with Python
+word_replace_string = "I love Java development"
+print(word_replace_string)
+print(word_replace_string.replace("Java", "Python"))
+
+
+print(my_string1.lower().count("python"))
+
 
 # Exercise 4
 # Are you surprised by the count of 'python' in the above example? Add a comment below to explain
@@ -154,7 +185,7 @@ print(my_string1.count("python"))
 # WITHOUT changing the actual string values
 exercise_string5a = "This is an exercise for you to problem solve "
 exercise_string5b = "This is an exercise for you to problem solve"
-are_equal = exercise_string5a == exercise_string5b
+are_equal = exercise_string5a.strip() == exercise_string5b.strip()
 print("String Method Exercise")
 print("String compare exercise:")
 print(are_equal)
@@ -165,5 +196,5 @@ print(are_equal)
 # Exercise 6 - How would we use a string method to fix the below code to return python instead of java
 # WITHOUT changing the actual string values
 exercise_string6 = "We are learning to use Java"
-print(exercise_string6)
+print(exercise_string6.replace("Java", "Python"))
 
